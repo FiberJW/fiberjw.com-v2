@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Juwan Wheatley (@FiberJW)",
+    "description": "Juwan Wheatley is a software developer + designer currently building cool things at Expo.io. Check out FiberJW.com to learn more!",
+    "slug": "fiberjwS",
+    "privacy": "public",
+    "sdkVersion": "34.0.0",
+    "platforms": ["ios", "android", "web"],
+    "primaryColor": "#000",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
