@@ -123,10 +123,9 @@ export default function App() {
       </View>
       <View style={[styles.bioContainer, styles.fixedWidthContainer45ch]}>
         <Text style={styles.bio}>
-          an anime connoisseur, react native enthusiast, and FPS warlord, juwan
-          wheatley wakes up every day to reason about the existence of life,
-          JavaScript, and NA ults with all of the brain cells residing beneath
-          his hairless scalp.
+          an anime connoisseur and react-native enthusiast, juwan wheatley wakes
+          up every day to reason about the existence of life and JavaScript with
+          all of the brain cells residing beneath his hairless scalp.
         </Text>
       </View>
       <View style={styles.fixedWidthContainer45ch}>
