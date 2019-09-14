@@ -114,6 +114,7 @@ export default function App() {
               accessibilityRole="link"
               href={"https://expo.io"}
               target="_blank"
+              rel="noopener noreferrer"
               style={styles.underline}
             >
               Expo.io
@@ -159,6 +160,7 @@ export default function App() {
         accessibilityRole="link"
         href={"https://github.com/fiberjw/fiberjw.com-v2"}
         target="_blank"
+        rel="noopener noreferrer"
         style={styles.sourceLink}
       >
         Source Code
@@ -215,6 +217,7 @@ function Link({ href, subdomainLabel, TLDAndPathLabel, style }) {
       accessibilityRole="link"
       href={href}
       target="_blank"
+      rel="noopener noreferrer"
     >
       <View style={styles.subdomainLabelContainer}>
         <Text style={styles.subdomainLabel}>{subdomainLabel}</Text>
