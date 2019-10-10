@@ -145,6 +145,11 @@ export default function App() {
             TLDAndPathLabel=".com/fiberjw"
           />
           <Link
+            href="https://discord.gg/JvwC9Hj"
+            subdomainLabel="discord"
+            TLDAndPathLabel=".gg/JvwC9Hj"
+          />
+          <Link
             href="https://blog.fiberjw.com"
             subdomainLabel="blog"
             TLDAndPathLabel=".fiberjw.com"
