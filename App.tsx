@@ -72,7 +72,7 @@ export default function App() {
         description: {
           fontFamily: "manrope-regular, sans-serif",
           color: "white",
-          fontSize: "0.75rem",
+          fontSize: "1rem",
           marginBottom: "1rem",
         },
         lightText: { fontFamily: "manrope-light, sans-serif" },
@@ -121,13 +121,6 @@ export default function App() {
             </Text>
           </Text>
         </View>
-      </View>
-      <View style={[styles.bioContainer, styles.fixedWidthContainer45ch]}>
-        <Text style={styles.bio}>
-          an anime connoisseur and react-native enthusiast, juwan wheatley wakes
-          up every day to reason about the existence of life and JavaScript with
-          all of the brain cells residing beneath his hairless scalp.
-        </Text>
       </View>
       <View style={styles.fixedWidthContainer45ch}>
         <Text style={styles.linksSectionTitle}>Links to lurk</Text>
