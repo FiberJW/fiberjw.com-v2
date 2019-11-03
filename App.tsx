@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, Children } from "react";
-import { StyleSheet, Text, View, Linking } from "react-native";
+import { StyleSheet, Text, View, Linking, ViewStyle } from "react-native";
 import { loadAsync } from "expo-font";
 
 export default function App() {
@@ -41,39 +41,39 @@ export default function App() {
         wrapperBanner: {
           width: "100%",
           backgroundColor: "#F9E223",
-          padding: "0.75rem",
+          padding: 12,
           alignItems: "center",
-          marginBottom: "1.5rem",
+          marginBottom: 24,
         },
         wrapperBannerText: {
           fontFamily: "manrope-semibold, sans-serif",
-          fontSize: "1.333rem",
+          fontSize: 21,
           color: "black",
         },
         underline: { textDecorationLine: "underline" },
         bioContainer: {
-          paddingHorizontal: "1rem",
-          paddingVertical: "1.5rem",
-          borderWidth: "0.1875rem",
-          marginBottom: "1.5rem",
+          paddingHorizontal: 16,
+          paddingVertical: 24,
+          borderWidth: 3,
+          marginBottom: 24,
         },
         bio: {
           fontFamily: "manrope-regular, sans-serif",
-          fontSize: "1rem",
+          fontSize: 16,
           color: "black",
-          lineHeight: "157.5%",
+          lineHeight: 24,
         },
         title: {
           fontFamily: "manrope-bold, sans-serif",
-          fontSize: "2.369rem",
+          fontSize: 36,
           color: "white",
-          marginBottom: "0.75rem",
+          marginBottom: 12,
         },
         description: {
           fontFamily: "manrope-regular, sans-serif",
           color: "white",
-          fontSize: "1rem",
-          marginBottom: "1rem",
+          fontSize: 16,
+          marginBottom: 16,
         },
         lightText: { fontFamily: "manrope-light, sans-serif" },
         fixedWidthContainer45ch: {
@@ -82,14 +82,14 @@ export default function App() {
         linksSectionTitle: {
           fontFamily: "manrope-semibold, sans-serif",
           color: "black",
-          fontSize: "1.777rem",
-          marginBottom: "1rem",
+          fontSize: 28,
+          marginBottom: 16,
         },
         sourceLink: {
           fontFamily: "manrope-bold, sans-serif",
           color: "black",
-          fontSize: "0.75rem",
-          marginVertical: "1.5rem",
+          fontSize: 12,
+          marginVertical: 24,
           textAlign: "center",
         },
       }),
@@ -147,11 +147,6 @@ export default function App() {
             subdomainLabel="blog"
             TLDAndPathLabel=".fiberjw.com"
           />
-          <Link
-            href="https://anilist.co/user/fiberjw"
-            subdomainLabel="anilist"
-            TLDAndPathLabel=".co/user/fiberjw"
-          />
         </LinkStack>
       </View>
       <Text
@@ -179,7 +174,17 @@ function LinkStack({ children }) {
   });
 }
 
-function Link({ href, subdomainLabel, TLDAndPathLabel, style }) {
+function Link({
+  href,
+  subdomainLabel,
+  TLDAndPathLabel,
+  style,
+}: {
+  href: string;
+  subdomainLabel: string;
+  TLDAndPathLabel: string;
+  style?: ViewStyle;
+}) {
   const styles = useMemo(
     () =>
       StyleSheet.create({
@@ -189,19 +194,19 @@ function Link({ href, subdomainLabel, TLDAndPathLabel, style }) {
         },
         subdomainLabelContainer: {
           backgroundColor: "black",
-          padding: "0.25rem",
-          marginRight: "0.25rem",
+          padding: 4,
+          marginRight: 4,
         },
         subdomainLabel: {
           color: "white",
           fontFamily: "manrope-semibold, sans-serif",
-          fontSize: "1.333rem",
+          fontSize: 21,
           textTransform: "lowercase",
         },
         TLDAndPathLabel: {
           color: "black",
           fontFamily: "manrope-regular, sans-serif",
-          fontSize: "1.333rem",
+          fontSize: 21,
           textTransform: "lowercase",
           textDecorationLine: "underline",
         },
