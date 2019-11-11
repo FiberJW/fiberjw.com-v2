@@ -138,11 +138,6 @@ export default function App() {
             TLDAndPathLabel=".com/fiberjw"
           />
           <Link
-            href="https://discord.gg/JvwC9Hj"
-            subdomainLabel="discord"
-            TLDAndPathLabel=".gg/JvwC9Hj"
-          />
-          <Link
             href="https://blog.fiberjw.com"
             subdomainLabel="blog"
             TLDAndPathLabel=".fiberjw.com"
@@ -163,15 +158,19 @@ export default function App() {
 }
 
 function LinkStack({ children }) {
-  return Children.map(children, (c, i) => {
-    return React.cloneElement(c, {
-      ...c.props,
-      style: [
-        c.props.style,
-        i !== Children.count(children) - 1 && { marginBottom: 16 },
-      ],
-    });
-  });
+  return (
+    <>
+      {Children.map(children, (c, i) => {
+        return React.cloneElement(c, {
+          ...c.props,
+          style: [
+            c.props.style,
+            i !== Children.count(children) - 1 && { marginBottom: 16 },
+          ],
+        });
+      })}
+    </>
+  );
 }
 
 function Link({
